@@ -1,0 +1,1 @@
+# stm32n6xx-hal-driver
