@@ -74,7 +74,10 @@
 #define MCE1_CONTEXT_NB    2U
 /* Private macros ------------------------------------------------------------*/
 
-#define IS_MCE_AES_INSTANCE(INSTANCE) ((INSTANCE) == MCE1)
+#define IS_MCE_AES_INSTANCE(INSTANCE) (((INSTANCE) == MCE1) || \
+                                       ((INSTANCE) == MCE2) || \
+                                       ((INSTANCE) == MCE3) || \
+                                       ((INSTANCE) == MCE4))
 
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
