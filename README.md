@@ -1,6 +1,6 @@
 # STM32CubeN6 HAL Driver MCU Component
 
-![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/stm32n6xx-hal-driver.svg?color=brightgreen)
+![tag](https://img.shields.io/badge/tag-v1.4.0-brightgreen.svg)
 
 ## Overview
 
