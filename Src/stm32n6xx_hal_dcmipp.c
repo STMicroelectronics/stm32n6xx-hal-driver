@@ -734,7 +734,7 @@ HAL_StatusTypeDef HAL_DCMIPP_CSI_SetConfig(const DCMIPP_HandleTypeDef *hdcmipp,
   /* set reg @0xe3 & reg @0xe2 value DLL target oscilation freq */
   /* Based on the table page 77, osc_freq_target */
   DCMIPP_CSI_WritePHYReg(csi_instance, 0x00, 0xe3, SNPS_Freqs[pCSI_Config->PHYBitrate].osc_freq_target >> 8);
-  DCMIPP_CSI_WritePHYReg(csi_instance, 0x00, 0xe3, SNPS_Freqs[pCSI_Config->PHYBitrate].osc_freq_target & 0xFFU);
+  DCMIPP_CSI_WritePHYReg(csi_instance, 0x00, 0xe2, SNPS_Freqs[pCSI_Config->PHYBitrate].osc_freq_target & 0xFFU);
 
   /* set basedir_0 to RX DLD 0 RX, 1 TX. Synopsys 1 RX 0 TX  + freq range */
   WRITE_REG(csi_instance-> PFCR, (0x28U << CSI_PFCR_CCFR_Pos) |
